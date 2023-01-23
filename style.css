@@ -4,34 +4,24 @@
   padding: 0; 
 }
 
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
 
+}
 
-/*------------------Heros section--------------------------------------------------------------------*/
-
+#back-img{
+  background: url('./Images/Ellipse 5.png');
+  background-repeat: no-repeat;
+  background-position: right;
+}
 
 .top{
-  background: url('./Background.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  position:absolute;
-  left: 0px;
-  top: 0px;
-  right: 0px;
-  object-fit: cover;
-  width: 1440px;
-  height:1175px;
-}
-
-
-.navigation {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 3rem 6vw;
-}
-
-#org{
-  color: #F08C00;
+      background: url('./Background.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      height: 100vh;
+      /* position:relative; */
 }
 
 .logo{
@@ -42,6 +32,13 @@
   color: #FFFFFF;
 }
 
+.navigation {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  padding: 3rem 6vw;
+}
+
 .navlist {
   display: flex;
   font-size: 1.5rem;
@@ -49,32 +46,42 @@
 }
 
 .navlist li{
-      list-style-type: none;
+  list-style-type: none;
 }
 .navlist  a{
-      text-decoration: none;
+  text-decoration: none;
 }
 .navlist > li > a {
-  color: #E5E7EB;
+color: #E5E7EB;
 }
 
 .right-icon{
   display: flex;
+  position: relative;
+  width: 2rem;
+  height: 2rem;
 }
+
+
+#org{
+  color: #F08C00;
+}
+
 .hero{
-  display:flex;
+  
 }
 
 .main-hero-text{
   display: flex;
   font-weight: 700;
   font-size: 3rem;
-  line-height: 70px;
+  line-height: 3.5rem;
   text-align: center;
   color: #FFFFFF;
   padding: 2rem;
   justify-content: center;
 }
+
 
 .sec-text{
   font-style: normal;
@@ -82,40 +89,48 @@
   font-size: 1.25rem;
   line-height: 160%;
   text-align: center;
-  color: #C6C0C0;
-  padding: 0 5rem 1.5rem 9rem;  
+  color: #C6C0C0;  
 }
 
-.search-bar{
+.search{
   display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 2rem 0;
 }
+
 .search-box{
   display: flex;
   width: 31rem;
   height: 4rem;
   background: rgba(222, 222, 222, 0.2);
   border: 2px solid rgba(255, 255, 255, 0.4);
-  border-radius: 45px;
-  margin-left: 20rem;
-  margin-top: 0.5rem;
-  padding-left: 3rem;
+  border-radius: 4.5rem;
   color:white ;
   font-size: large;
 }
 
+.left-search{
+  width: 80%;
+}
+
+.right-search{
+  width: 20%;
+}
 .search-icon{
-  position: absolute;
+  position: sticky;
   width: 1.6rem;
   height: 1.6rem;
-  left: 67.1%;
-  top: 44.8%;
   background-image: url('./Icons/Ellipse\ 5.png');
   z-index: 1;
   color: white;
   cursor: pointer;
   background: transparent;
   border: none;
+  margin-left: -2.6rem;
 }
+
 
 .img-background{
   position: absolute;
@@ -131,16 +146,9 @@
 
 .mid-part{
   display: flex;
-  position: absolute;
-  gap: 0.5rem;
-  right: 0px;
-  left: 0px;
-  top: 65rem;
   justify-content: center;
-  /* height: fit-content;
-  margin: 0 2rem; */
-  width: 1360px;
   height: fit-content;
+  padding: 3rem 1rem;
   margin: 1rem 2rem;
 }
 
@@ -154,25 +162,17 @@
   display: inline-flex;
   gap: 1rem;
 }
-
 /*------------------ Koleski Furniture----------------------------------------------------------------------------------------*/
 
 
 .koleski {
   display: flex;
-  gap: 5px;
-  position: absolute;
-  width: 1440px;
-  /* height: 588px; */
-  left: 0px;
-  top: 1600px;
-  right: 0px;
   padding: 0 0.5rem;
 }
 
 .column {
 width: 50%;
-padding: 10px;
+padding: 0.rem;
 object-fit: cover;
 }
 
@@ -200,8 +200,8 @@ object-fit: cover;
 #a1{
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 48px; 
+  font-size: 2.225rem;
+  line-height: 3rem; 
   color: #2E2A2A;   
 }
 
@@ -209,8 +209,8 @@ object-fit: cover;
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 27px;
+  font-size: 1.225rem;
+  line-height: 1.6rem;
   color: #2E2A2A;
 }
 
@@ -218,7 +218,7 @@ object-fit: cover;
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 28px;
    /* or 175%  */
   color: #686161;
@@ -227,29 +227,24 @@ object-fit: cover;
 #a4{
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 2rem;
   line-height: 41px;
   color: #F08C00;
 }
 
+
 /*---------------Produk catlog-------------------------------------------------------------------------------*/
 
 .Produk-katlog{
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  top: 112rem;
-  /* width: 1341px; */
-  width: 1420px;
-  padding-bottom: 3rem;
+  padding: 3rem;
 }
 
 .head-name{
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 48px;
+  font-size: 2.25rem;
+  line-height: 3rem;
   color: #2E2A2A;
   text-align: center;
 }
@@ -259,7 +254,7 @@ object-fit: cover;
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  margin-bottom: 1rem;;
+  margin-bottom: 1rem;
 }
 
 .catlog-list{
@@ -303,21 +298,21 @@ object-fit: cover;
   object-fit: cover;
   width: 100%;
   height: 50%;
-  padding: 5px;
+  padding: 0.5rem;
 }
 
 .flex2 > img{
   object-fit: cover;
   height: 50%;
   width:100%;
-  padding: 5px;
+  padding: 0.5rem;
 }
 
 .flex3 > img{
   object-fit: cover;
   width: 100%;
   height: 50%;
-  padding: 5px;
+  padding: 0.5rem;
 }
 
 .grid{
@@ -392,7 +387,7 @@ object-fit: cover;
 
 .btn{
   padding: 0.5rem;
-  margin: 1rem auto;
+  margin: 1rem 0 0;
 }
 
 #btn-text{
@@ -405,17 +400,20 @@ object-fit: cover;
 
 .dapatkan {
   display: flex;
-  gap: 5px;
-  position: absolute;
-  top: 172rem;
-  left: 0px;
-  right: 0px;
-  padding: 0 0.5rem;
 }
+
+/* @media  screen and (min-width:700px) {
+  .dapatkan{
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    flex-direction: column;
+  } 
+}*/
 
 .column {
 width: 50%;
-padding: 10px;
+padding: 0.8rem;
 }
 
 .column >img{
@@ -449,14 +447,12 @@ padding: 10px;
 
 #dapat-btn{
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
   padding: 0.5rem;
   margin: 3rem 1rem;
-
   position: absolute;
-  width: 157px;
-  height: 46px;
+  width: 10rem;
+  height: 4.2rem;
   color: #FFFFFF;
   background: #F08C00;
   border-radius: 4px;
@@ -468,11 +464,7 @@ padding: 10px;
 /* ---------------Footer section---------------------------------------------------------------- */
 
 #footer{
-  display: flex;
-  position: absolute;
-  top: 194rem;
-  left: 0px;
-  right: 0px;
+  /* display: flex; */
   margin: 2rem 0;
   padding: 1rem 2rem;
 }
@@ -482,8 +474,8 @@ padding: 10px;
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 1rem;
+  line-height: 1.45rem;
   color: #8C8585;
 }
 
@@ -491,20 +483,13 @@ padding: 10px;
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 1rem;
+  line-height: 1.4rem;
   text-decoration-line: underline;
-  color: #8C8585;
-  padding-left: 50rem;
+  float: right;
 }
 
 #right-footer a{
   color: #8C8585;
 }
-@media  screen and (mid-width:700px) {
-  .dapatkan{
-      flex-wrap: wrap;
-  }
-}
-
 
